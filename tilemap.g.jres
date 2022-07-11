@@ -1,0 +1,44 @@
+{
+    "transparency16": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true
+    },
+    "層級1": {
+        "id": "層級1",
+        "mimeType": "application/mkcd-tilemap",
+        "data": "MTAxMDAwMTAwMDA3MDgwODA4MDgwODA4MDgwODA4MDgwODA4MDgwODAxMDYwOTA5MDkwOTA5MDkwOTA5MDkwOTA5MDkwOTBhMDQwNjA5MDkwOTA5MDkwOTA5MDkwOTA5MDkwOTA5MDkwNDA2MDkwOTBiMGIwYjBiMGIwOTA5MDkwOTA5MDkwOTA0MDYwOTA5MGIwOTA5MDkwOTA5MDkwOTA5MDkwOTA5MDQwNjA5MDkwYjA5MDkwOTA5MDkwOTA5MDkwOTA5MDkwNDA2MDkwOTBiMDkwOTBiMGIwYjBiMGIwYjBiMGIwYjA0MDYwOTBlMGIwOTA5MDkwOTA5MDkwOTA5MDkwOTA5MDQwNjBiMGIwYjA5MDkwOTA5MDkwOTA5MDkwOTA5MDkwNDA2MGMwYzBiMDkwOTBiMGIwYjBiMGIwYjBiMDkwOTA0MDYwOTA5MGIwOTA5MGIwYzA5MDkwOTA5MGIwOTA5MDQwNjA5MDkwYjA5MDkwYjA5MDkwOTA5MGQwYjA5MDkwNDA2MDkwOTBiMDkwOTBiMDkwOTBiMGIwYjBiMDkwOTA0MDYwOTA5MDkwOTA5MGIwOTA5MDkwOTA5MDkwOTA5MDQwNjA5MDkwOTA5MDkwYjA5MDkwOTA5MDkwOTA5MDkwNDAyMDUwNTA1MDUwNTA1MDUwNTA1MDUwNTA1MDUwNTAzMjIyMjIyMjIyMjIyMjIyMjAyMDAwMDAwMDAwMDAwMjAwMjAwMDAwMDAwMDAwMDIwMDIyMDIyMjIwMDAwMDAyMDAyMjAwMDAwMDAwMDAwMjAwMjIwMDAwMDAwMDAwMDIwMDIyMDAwMjIyMjIyMjIyMjAyMjAwMDAwMDAwMDAwMjAyMjIyMDAwMDAwMDAwMDIwMDIyMDAwMjIyMjIyMDIyMDAyMjAwMDAyMDAwMDAyMjAwMjIwMDAwMjAwMDAwMjIwMDIyMDAwMDIyMDIyMDIyMDAyMDAwMDAyMDAwMDAwMjAwMjAwMDAwMjAwMDAwMDIwMjIyMjIyMjIyMjIyMjIyMg==",
+        "tileset": [
+            "myTiles.transparency16",
+            "sprites.dungeon.greenOuterNorthEast",
+            "sprites.dungeon.greenOuterSouthEast",
+            "sprites.dungeon.greenOuterSouthWest",
+            "sprites.dungeon.greenOuterEast0",
+            "sprites.dungeon.greenOuterSouth0",
+            "sprites.dungeon.greenOuterWest1",
+            "sprites.dungeon.greenOuterNorthWest",
+            "sprites.dungeon.greenOuterNorth0",
+            "sprites.dungeon.floorLight2",
+            "sprites.dungeon.collectibleBlueCrystal",
+            "sprites.dungeon.floorLight0",
+            "sprites.dungeon.doorLockedNorth",
+            "sprites.dungeon.collectibleRedCrystal",
+            "sprites.dungeon.buttonPink"
+        ],
+        "displayName": "層級1"
+    },
+    "層級2": {
+        "id": "層級2",
+        "mimeType": "application/mkcd-tilemap",
+        "data": "MTAxMDAwMTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMA==",
+        "tileset": [
+            "myTiles.transparency16"
+        ],
+        "displayName": "層級2"
+    },
+    "*": {
+        "mimeType": "image/x-mkcd-f4",
+        "dataEncoding": "base64",
+        "namespace": "myTiles"
+    }
+}
