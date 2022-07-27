@@ -14,8 +14,13 @@ scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.collectibleRedCrystal, fu
     tiles.placeOnRandomTile(mySprite3, sprites.dungeon.doorLockedEast)
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
-	
+    tiles.setCurrentTilemap(tilemap`層級5`)
+    statusbar = statusbars.create(20, 4, StatusBarKind.Health)
+    tiles.placeOnRandomTile(mySprite2, sprites.dungeon.collectibleInsignia)
+    statusbar2 = statusbars.create(20, 4, StatusBarKind.EnemyHealth)
 })
+let statusbar2: StatusBarSprite = null
+let statusbar: StatusBarSprite = null
 let mySprite3: Sprite = null
 let mySprite2: Sprite = null
 let mySprite: Sprite = null
