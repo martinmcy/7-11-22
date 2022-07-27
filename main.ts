@@ -1,6 +1,3 @@
-scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.buttonPink, function (sprite, location) {
-    info.changeLifeBy(1)
-})
 info.onCountdownEnd(function () {
     game.over(false)
 })
@@ -17,7 +14,7 @@ scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.collectibleRedCrystal, fu
     tiles.placeOnRandomTile(mySprite3, sprites.dungeon.doorLockedEast)
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
-    info.changeLifeBy(-1)
+	
 })
 let mySprite3: Sprite = null
 let mySprite2: Sprite = null
@@ -109,3 +106,5 @@ scene.cameraFollowSprite(mySprite)
 info.startCountdown(60)
 info.setLife(10000)
 mySprite.startEffect(effects.starField)
+scene.cameraShake(4, 500)
+music.bigCrash.playUntilDone()
