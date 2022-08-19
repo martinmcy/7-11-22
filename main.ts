@@ -1,8 +1,6 @@
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.doorLockedNorth, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`層級5`)
-    statusbar = statusbars.create(20, 4, StatusBarKind.Health)
     tiles.placeOnRandomTile(mySprite2, sprites.dungeon.darkGroundCenter)
-    statusbar2 = statusbars.create(20, 4, StatusBarKind.EnemyHealth)
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.buttonPinkDepressed, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`層級1`)
@@ -12,9 +10,7 @@ scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.buttonPinkDepressed, func
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.doorLockedWest, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`層級10`)
-    statusbar = statusbars.create(20, 4, StatusBarKind.Health)
     tiles.placeOnRandomTile(mySprite2, sprites.dungeon.darkGroundCenter)
-    statusbar2 = statusbars.create(20, 4, StatusBarKind.EnemyHealth)
 })
 info.onCountdownEnd(function () {
     game.over(false)
@@ -24,9 +20,7 @@ scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.chestClosed, function (sp
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.doorLockedSouth, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`層級8`)
-    statusbar = statusbars.create(20, 4, StatusBarKind.Health)
     tiles.placeOnRandomTile(mySprite2, sprites.dungeon.darkGroundCenter)
-    statusbar2 = statusbars.create(20, 4, StatusBarKind.EnemyHealth)
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.buttonOrangeDepressed, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`層級1`)
@@ -45,9 +39,7 @@ info.onLifeZero(function () {
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.doorLockedEast, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`層級9`)
-    statusbar = statusbars.create(20, 4, StatusBarKind.Health)
     tiles.placeOnRandomTile(mySprite2, sprites.dungeon.darkGroundCenter)
-    statusbar2 = statusbars.create(20, 4, StatusBarKind.EnemyHealth)
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.collectibleRedCrystal, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`層級1`)
@@ -61,8 +53,9 @@ scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.collectibleInsignia, func
     tiles.placeOnRandomTile(mySprite2, sprites.dungeon.doorLockedWest)
     tiles.placeOnRandomTile(mySprite3, sprites.dungeon.doorLockedWest)
 })
-let statusbar2: StatusBarSprite = null
-let statusbar: StatusBarSprite = null
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
+    info.changeLifeBy(-1)
+})
 let mySprite3: Sprite = null
 let mySprite2: Sprite = null
 let mySprite: Sprite = null
