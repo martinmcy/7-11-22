@@ -1,8 +1,10 @@
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.doorLockedNorth, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`層級5`)
     tiles.placeOnRandomTile(mySprite2, sprites.dungeon.darkGroundCenter)
+    info.changeLifeBy(-1)
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.buttonPinkDepressed, function (sprite, location) {
+    info.changeLifeBy(1)
     tiles.setCurrentTilemap(tilemap`層級1`)
     tiles.placeOnRandomTile(mySprite, sprites.dungeon.stairSouth)
     tiles.placeOnRandomTile(mySprite2, sprites.dungeon.doorLockedEast)
@@ -11,6 +13,7 @@ scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.buttonPinkDepressed, func
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.doorLockedWest, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`層級10`)
     tiles.placeOnRandomTile(mySprite2, sprites.dungeon.darkGroundCenter)
+    info.changeLifeBy(-1)
 })
 info.onCountdownEnd(function () {
     game.over(false)
@@ -21,14 +24,22 @@ scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.chestClosed, function (sp
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.doorLockedSouth, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`層級8`)
     tiles.placeOnRandomTile(mySprite2, sprites.dungeon.darkGroundCenter)
+    info.changeLifeBy(-1)
+})
+scene.onHitWall(SpriteKind.Enemy, function (sprite, location) {
+    if (mySprite2.x == 13 || mySprite3.x == 13) {
+    	
+    }
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.buttonOrangeDepressed, function (sprite, location) {
+    info.changeLifeBy(1)
     tiles.setCurrentTilemap(tilemap`層級1`)
     tiles.placeOnRandomTile(mySprite, sprites.dungeon.stairNorth)
     tiles.placeOnRandomTile(mySprite2, sprites.dungeon.doorLockedSouth)
     tiles.placeOnRandomTile(mySprite3, sprites.dungeon.doorLockedSouth)
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.buttonTealDepressed, function (sprite, location) {
+    info.changeLifeBy(1)
     tiles.setCurrentTilemap(tilemap`層級3`)
     tiles.placeOnRandomTile(mySprite, sprites.dungeon.stairWest)
     tiles.placeOnRandomTile(mySprite2, sprites.dungeon.doorLockedNorth)
@@ -40,6 +51,7 @@ info.onLifeZero(function () {
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.doorLockedEast, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`層級9`)
     tiles.placeOnRandomTile(mySprite2, sprites.dungeon.darkGroundCenter)
+    info.changeLifeBy(-1)
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.collectibleRedCrystal, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`層級1`)
@@ -48,12 +60,14 @@ scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.collectibleRedCrystal, fu
     tiles.placeOnRandomTile(mySprite3, sprites.dungeon.doorLockedEast)
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.collectibleInsignia, function (sprite, location) {
+    info.changeLifeBy(1)
     tiles.setCurrentTilemap(tilemap`層級3`)
     tiles.placeOnRandomTile(mySprite, sprites.dungeon.stairEast)
     tiles.placeOnRandomTile(mySprite2, sprites.dungeon.doorLockedWest)
     tiles.placeOnRandomTile(mySprite3, sprites.dungeon.doorLockedWest)
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
+    tiles.placeOnRandomTile(mySprite, sprites.dungeon.darkGroundCenter)
     info.changeLifeBy(-1)
 })
 let mySprite3: Sprite = null
@@ -144,7 +158,7 @@ tiles.placeOnRandomTile(mySprite2, sprites.dungeon.doorLockedNorth)
 tiles.placeOnRandomTile(mySprite3, sprites.dungeon.doorLockedWest)
 scene.cameraFollowSprite(mySprite)
 info.startCountdown(60)
-info.setLife(10000)
+info.setLife(5)
 mySprite.startEffect(effects.starField)
 scene.cameraShake(4, 500)
 music.bigCrash.playUntilDone()
